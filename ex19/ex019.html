@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>LÁ - TABUADA + SEM * SER / DE % PAPEL</h1>
+    </header>
+    <section>
+        <header>
+            <h2>Gerador de tabuada</h2>
+        </header>
+        <div id="esq">
+            <p>Tabuada de: <input type="number" name="numero" id="numero"></p>
+            <input type="button" value="Gerar tabuada" id="botao" onclick="gerar()">
+        </div>
+    </section>
+    <aside>
+        <header>
+            <h2>Resultado</h2>
+        </header>
+        <div id="dir">
+            <select name="resultado" id="result" size="10">
+                <option>Aguardando gerar tabuada...</option>
+            </select>
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+</html>
