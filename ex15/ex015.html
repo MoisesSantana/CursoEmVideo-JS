@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Molassio's Age</h1>
+    </header>
+    <section>
+        <div id="container">
+            <p>
+                Data de nascimento: <input type="date" name="idade" id="idade">
+            </p>    
+            <p>
+                Sexo: <br>
+                <input type="radio" name="sex" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sex" id="feminino">
+                <label for="feminino">Feminino</label>
+            </p>
+            <input type="button" value="Enviar!" id="botao" onclick="verificar()">
+            <p id="result">Aguardando envio de resposta...</p>
+        </div>
+        
+    </section>
+    <footer>
+        <p id="copyr">&copy; Molassio's - 06/2020</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

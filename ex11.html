@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suavi Viagem</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+        body{
+            background: rgb(201, 248, 242);
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 40pt;
+            text-shadow: 1px 1px 3px black;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #menu{
+            background: teal;
+            padding: 30px 50px 20px 50px;
+            box-shadow: 2px 2px 5px black;
+        }
+        h2{
+            margin:0;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            margin-bottom: 30px;
+            border-bottom: 2px solid;
+        }
+        .cadastro{
+            font-family: 'Noto Sans', sans-serif;
+            margin-bottom: 5px;
+            color: rgb(159, 247, 228);
+            text-shadow: .5px .5px 1px black;
+            text-align: center;
+        }
+        #naci{
+            margin-bottom: 20px;
+        }
+        .entrada{
+            width: 300px;
+            border: none;
+            height: 30px;
+        }
+        #botao{
+            width: 305px;
+            height: 70px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20pt;
+            color: teal;
+            background: rgb(159, 247, 228);
+            border: none;
+            box-shadow: 2px 2px 5px black;
+        }
+        #imprimir{
+            font-family: 'Noto Sans', sans-serif;
+            color: rgb(159, 247, 228);
+            text-align: center;
+            text-shadow: .5 .5 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>suaVIagem</h1>
+    <section>
+        <div id="menu">
+            <h2>Digite seus dados</h2>
+            <p class="cadastro">Digite seu nome</p>
+            <input type="text" name="Nome" class="entrada" id="nome">
+            <p class="cadastro">Digite sua idade</p>
+            <input type="number" name="Idade" class="entrada" id="idade">
+            <p class="cadastro">Digite o nome do seu país</p>
+            <input type="text" name="Nacionalidade" class="entrada" id="naci"><br>
+            <input type="button" value="Confirmar!" id="botao">
+            <p id="imprimir"></p>
+        </div>
+    </section>
+    <script>
+        var verif = document.querySelector('#botao')
+
+        verif.addEventListener('click', resultado)
+        
+        function resultado(){
+            var tituloTeste = document.querySelector('h2')
+            var tidade = document.querySelector('#idade')
+            var nomeTeste = document.querySelector('#nome').value
+            var nacioTeste = document.querySelector('#naci').value
+            var imprimirTeste = document.querySelector('#imprimir')
+            var idade = Number(tidade.value)
+            if(idade<18){
+                imprimirTeste.innerHTML = `Lamentamos ${nomeTeste}<br>você é menor de idade`
+            }else if(nacioTeste === 'Brasil'){
+                imprimirTeste.innerHTML = `Bem vindo(a) ${nomeTeste}`
+            } else {
+                imprimirTeste.innerHTML = `Bem vindo(a) ${nomeTeste}<br> precisa de tradutor?`
+            }
+            tituloTeste.innerHTML = 'Resultado' 
+        }
+    </script>
+</body>
+</html>

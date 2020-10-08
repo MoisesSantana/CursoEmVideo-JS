@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN/RJ</title>
+    <style>
+        body{
+            background: rgba(17, 14, 14, 0.664);
+        }
+        section{
+            justify-content: center;
+            display: flex;
+        }
+        h1{
+            color: rgb(233, 240, 169);
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #caixa_vel{
+            box-shadow: 3px 3px 3px whitesmoke;
+            width:  350px;
+            height: 50px;
+            border: 1px solid;
+            padding: 20px;
+            font-family: sans-serif;
+            font-size: 12pt;
+        }
+        #txtvel{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>sistema de multas</h1>
+    <section>
+        <div id="caixa_vel">
+            Velocidade do carro:<input type="number" name="txtvel" id="txtvel"> Km/h
+            <input type="button" value="Verificar">
+            <p>...</p>
+        </div>
+    </section>
+    <script>
+        var txtvel = document.querySelector('#txtvel')
+        var result = document.querySelector('p')
+        var verif = document.querySelectorAll('input')[1]
+        verif.addEventListener('click',multa)
+        function multa (){
+            var vel = Number(txtvel.value)
+            if(vel>80){
+                result.innerHTML = '<strong>MULTADO</strong>'
+                result.style.color = 'red'
+                result.style.textShadow = '3px 3px 3px black'
+            } else{
+                result.innerHTML = '<strong>NÃO HÁ MULTAS</strong>'
+                result.style.color = 'blue'
+                result.style.textShadow = '3px 3px 3px black'
+            }
+        }
+    </script>
+</body>
+</html>
