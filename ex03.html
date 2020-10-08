@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá, mundo!</title>
+</head>
+<body>
+    <script>
+        // Number.parseFloat() - converte para number real
+        // Number.parseInt() - converte para number inteiro
+        // Number() - converte para number da forma que você digitar
+        // String() - converte para string
+        //variável.toString() - converte para string
+        // s.length quantaos caracteres tem a string ou quantos valores armazenados no array
+        // s.toUpperCase() tudo para 'MAIÚSCULAS'
+        // s.toLowerCase() tudo para 'minúsculas'
+        var n1 = Number.parseInt (window.prompt("Digite um número: "))
+        var n2 = Number.parseFloat(window.prompt("Digite outro número: ")) // retorna string
+        var s = n1+n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${s}`)// template string (forma mais moderna da concatenação)
+    </script>    
+</body>
+</html>

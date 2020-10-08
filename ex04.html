@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá, mundo!</title>
+    <style>
+        h1{
+            font: bolder 25pt sans-serif;
+            text-shadow: 2px 2px 3px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - R$ antes do number trocando 'BRL' por 'USD' US$ antes do number
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`<h1>Olá, ${nome} Seu nome tem ${nome.length} letras</h1>`)
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>`)
+    </script>    
+</body>
+</html>
