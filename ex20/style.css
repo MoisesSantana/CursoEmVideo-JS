@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  align-items: center;
+  background-color: rgb(219, 50, 77);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  color: rgb(162, 156, 155);
+  font-family: Roboto, sans-serif;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}
+
+main {
+  align-items: center;
+  background-color: rgb(81, 28, 41);
+  color: rgb(162, 156, 155);
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.inside-main {
+  margin: 30px;
+}
+
+.entries {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.entries input::placeholder {
+  color: rgb(86, 73, 78);
+  font-family: Roboto, sans-serif;
+}
+
+.entries button {
+  background-color: rgb(166, 38, 57);
+  border: none;
+  border-radius: 100%;
+  color: rgb(162, 156, 155);
+  cursor: pointer;
+  font-family: Robot, sans-serif;
+  font-weight: bolder;
+  padding: 10px;
+  transition: 1s;
+}
+
+.entries button:hover {
+  background-color: rgb(219, 50, 77);
+  box-shadow: 0 0 5px rgb(162, 156, 155);
+}
+
+.result {
+  width: 100%;
+}
+
+.result select {
+  background-color: rgb(166, 38, 57);
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  width: 100%;
+}
+
+.result option {
+  color: rgb(162, 156, 155);
+  font-family: Robot, sans-serif;
+  font-size: 14pt;
+  text-align: center;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(162, 156, 155);
+  color: rgb(86, 73, 78);
+  display: flex;
+  flex-direction: column;
+  font-family: Robot, sans-serif;
+  height: 110px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+footer address {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+footer address a {
+  color: rgb(86, 73, 78);
+  transition: 1s;
+}
+
+footer address a:hover {
+  color: rgb(106, 83, 98);
+  transform: scale(1.5, 1.5);
+}

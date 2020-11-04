@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number List</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>Analizador de Números</h1>
+    </header>
+
+    <main>
+      <div class="entries inside-main">
+        <label for="current-number">Digite um número: <input id="current-number" type="number" placeholder="de 1 até 100"></label>
+        <button id="submit">OK</button>
+      </div>
+      
+      <div class="result inside-main">
+        <select name="result" id="result" size="10">
+          <option value="">Aguardando envio</option>
+        </select>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Todos os direitos resservados, Moisés Santana</h2>
+      <address>
+        <a href="https://www.linkedin.com/in/moises-santana" target="_blank">LinkedIn</a>
+        <a href="https://www.github.com/MoisesSantana" target="_blank">GitHub</a>
+      </address>
+    </footer>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
